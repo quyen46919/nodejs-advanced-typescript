@@ -1,4 +1,4 @@
-const Joi = require('joi');
+var Joi = require('joi');
 
 const createNewUser = {
     body: Joi.object().keys({

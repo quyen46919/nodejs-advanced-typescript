@@ -1,13 +1,18 @@
 // types
 import express from 'express';
 
-const user = require('./user.route');
+const userRoute = require('./user.route');
+const dishRoute = require('./dish.route');
 const router = express.Router();
 
 const defaultRoutes = [
     {
       path: '/user',
-      route: user,
+      route: userRoute,
+    },
+    {
+      path: '/dish',
+      route: dishRoute,
     }
 ];
 

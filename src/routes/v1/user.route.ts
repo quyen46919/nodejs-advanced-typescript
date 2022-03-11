@@ -1,8 +1,8 @@
 const userValidation = require('../../validations/user.validation');
 const userController = require('../../controllers/user.controller');
-const validate = require('../../middlewares/validate.middlewares');
+var validate = require('../../middlewares/validate.middlewares');
 var express = require('express');
-const router = express.Router();
+var router = express.Router();
 
 router.route('/')
     .post(validate(userValidation.createNewUser), userController.createNewUser)
